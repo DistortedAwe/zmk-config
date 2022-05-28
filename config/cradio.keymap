@@ -74,9 +74,9 @@
        		left_layer {
 		bindings = <
         &kp ESC &kp PAUSE_BREAK &kp C_MUTE &kp LBKT &kp RBKT           &kp MINUS &kp N7 &kp N8 &kp N9 &kp BSPC
-        &kp TAB &kp C_VOL_DN &kp C_VOL_UPe &kp SEMI &kp BSLH          &kp EQUAL &kp N4 &kp N5 &kp N6 &kp RET
+        &kp TAB &kp C_VOL_DN &kp C_VOL_UP &kp SEMI &kp BSLH          &kp EQUAL &kp N4 &kp N5 &kp N6 &kp RET
         &kp GRAVE &kp C_PREV &kp C_NEXT &kp COMMA &kp DOT           &kp N0 &kp N1 &kp N2 &kp N3 &to 2
-                &to 0 &kp LSHIFT                        &none &to 3
+                &to 0 &kp LSHIFT                            &none &to 3
 		>;
 		};
 		

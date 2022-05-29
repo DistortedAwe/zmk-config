@@ -84,7 +84,7 @@
         bindings = <
         &kp ESC &none &none &none &none           &kp HOME &none &kp UP &none &kp BSPC
         &kp TAB &none &none &none &none           &kp END &kp LEFT &kp DOWN &kp RIGHT &kp RET
-        &kp RSFT &kp CAPS &RCTL &none &none           &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none
+        &kp RSFT &kp CAPS & kp RCTL &kp RGUI &none           &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none
                 &to 0 &kp RALT                         &none &to 1
 		>;
 		};	

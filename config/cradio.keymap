@@ -31,8 +31,8 @@
 		bindings = <
         &kp ESC &none &kp UP &none &kp HOME                 &kp MINUS &kp N7 &kp N8 &kp N9 &kp BSPC
         &kp TAB &kp LEFT &kp DOWN &kp RIGHT &kp END        &kp EQUAL &kp N4 &kp N5 &kp N6 &kp RET
-        &kp GRAVE &none &none &kp COMMA &kp DOT           &kp N0 &kp N1 &kp N2 &kp N3 &to 2
-                &to 0 &kp LCTL                            &kp LSHIFT &none
+        &kp GRAVE &none &none &kp COMMA &kp DOT           &kp N0 &kp N1 &kp N2 &kp N3 &none
+                &to 0 &kp LCTL                            &kp LSHIFT &to 2
 		>;
 		};
 		
@@ -41,7 +41,7 @@
         &kp ESC &kp PAUSE_BREAK &kp C_MUTE &kp LBKT &kp RBKT            &none &none &none &none &kp BSPC
         &kp TAB &kp C_VOL_DN &kp C_VOL_UP &kp SEMI &kp BSLH           &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp RET
         &kp GRAVE &kp C_PREV &kp C_NEXT &kp COMMA &kp DOT           &none &none &none &none &none
-                &to 0 &kp LCTL                         &LSHIFT &to 1
+                &to 0 &kp LCTL                         &kp LSHIFT &to 1
 		>;
 		};	
 	};

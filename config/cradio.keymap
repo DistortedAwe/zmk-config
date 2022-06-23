@@ -30,17 +30,25 @@
        		one {
 		bindings = <
         &kp ESC &none &kp UP &none &kp HOME                 &kp MINUS &kp N7 &kp N8 &kp N9 &kp BSPC
-        &kp TAB &kp LEFT &kp DOWN &kp RIGHT &kp END        &kp EQUAL &kp N4 &kp N5 &kp N6 &kp RET
-        &kp GRAVE &kp SLASH &kp LALT &kp COMMA &kp DOT           &kp N0 &kp N1 &kp N2 &kp N3 &kp LGUI
+        &kp TAB &kp LEFT &kp DOWN &kp RIGHT &kp END        &kp EQUAL &kp N4 &kp N5 &kp N6 &kp LGUI
+        &kp GRAVE &kp SLASH &kp LALT &kp COMMA &kp DOT           &kp N0 &kp N1 &kp N2 &kp N3 &kp RET
                 &to 0 &kp LCTL                            &kp LSHIFT &to 2
 		>;
 		};
 		
 		    two {
         bindings = <
-        &kp ESC &kp PAUSE_BREAK &kp C_MUTE &kp LBKT &kp RBKT            &none &none &none &none &kp BSPC
-        &kp TAB &kp C_VOL_DN &kp C_VOL_UP &kp SEMI &kp BSLH           &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp RET
-        &kp GRAVE &kp C_PREV &kp C_NEXT &kp COMMA &kp DOT           &none &none &none &none &none
+        &kp ESC &kp PAUSE_BREAK &kp C_MUTE &kp LBKT &kp RBKT            &kp GRAVE &none &none &none &kp BSPC
+        &kp TAB &kp C_VOL_DN &kp C_VOL_UP &kp SEMI &kp BSLH           &kp Z &none &none &none &to 3
+        &kp GRAVE &kp C_PREV &kp C_NEXT &kp COMMA &kp DOT           &none &none &none &none &kp RET
+                &to 0 &kp LCTL                         &kp LSHIFT &to 1
+		>;
+		};	
+		    three {
+        bindings = <
+        &none &none &none &none &none           &none &none &none &none &kp BSPC
+        &none &none &none &none &none          &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &to 3
+        &none &none &none &none &none            &none &none &none &none &kp RET
                 &to 0 &kp LCTL                         &kp LSHIFT &to 1
 		>;
 		};	

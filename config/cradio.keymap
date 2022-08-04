@@ -18,14 +18,17 @@
         combos {
                 compatible = "zmk,comobos";
                 combo_esc {
+                        timeout-ms = <75>;
                         key-positions = <0 1>;
                         bindings = <&kp ESC>;
                 };
                 combo_bspc {
+                        timeout-ms = <75>;
                         key-posiitons = <17 18>;
                         bindings = <&kp BSPC>;
                 };
                 combo_zero {
+                        timeout-ms = <75>;
                         key-positions = <16 17>;
                         bindings = <&to 0>;
                 };

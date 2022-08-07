@@ -53,11 +53,11 @@
         };
     
         combos {
-                compatible = "zmk,comobos";
+                compatible = "zmk,combos";
                 combo_esc {
                         timeout-ms = <500>;
                         key-positions = <0 1>;
-                        bindings = <&kp A>;
+                        bindings = <&kp ESC>;
                 };
                 
                 combo_bspc {
@@ -137,7 +137,7 @@
        		zero {
 		bindings = <
 		&kp Q       &kp W       &kp E &kp R &kp T 			&kp Y &kp U  &kp I    &kp O   &kp P 
-		&mt TAB A   &kp S       &kp D &kp F &kp G         	        &kp H &to_kp 4 J &kp K &kp L &kp QUOT
+		&kp A       &kp S       &kp D &kp F &kp G         	        &kp H &to_kp 4 J &kp K &kp L &kp QUOT
 		&mt LGUI Z  &mt LALT X  &kp C &kp V &kp B	                &kp N &kp M  &kp CMMA &kp DOT &kp RET
           				&kp SPC &kp LCTL  			&kp LSHIFT &to 1 
 		>;

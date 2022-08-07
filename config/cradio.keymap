@@ -62,15 +62,15 @@
                 
                 combo_bspc {
                         timeout-ms = <500>;
-                        key-posiitons = <17 18>;
+                        key-positions = <17 18>;
                         bindings = <&kp BSPC>;
                 };
                 
-                //combo_zero {
-                //        timeout-ms = <500>;
-                //        key-positions = <16 17>;
-                //        bindings = <&to 0>;
-                //};
+                combo_zero {
+                        timeout-ms = <500>;
+                        key-positions = <16 17>;
+                        bindings = <&to 0>;
+                };
         };
 
         macros {

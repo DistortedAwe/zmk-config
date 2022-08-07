@@ -31,7 +31,7 @@
                 flavor = "hold-preferred";
                 tapping_term_ms = <500>;
                 bindings = <&next_tab>, <&prev_tab>;
-                }
+                };
 
                 clip: behavior_clip {
                 compatible = "zmk,behavior-hold-tap";
@@ -40,7 +40,7 @@
                 flavor = "hold-preferred";
                 tapping_term_ms = <500>;
                 bindings = <&cut_clip>, <&copy_clip>;
-                }
+                };
 
                 paste: behavior_paste {
                 compatible = "zmk,behavior-hold-tap";
@@ -49,7 +49,7 @@
                 flavor = "hold-preferred";
                 tapping_term_ms = <500>;
                 bindings = <&paste_clip_format>, <&paste_clip>;
-                }
+                };
         };
     
         combos {
@@ -59,11 +59,13 @@
                         key-positions = <0 1>;
                         bindings = <&kp ESC>;
                 };
+                
                 combo_bspc {
                         timeout-ms = <500>;
                         key-posiitons = <17 18>;
                         bindings = <&kp BSPC>;
                 };
+                
                 combo_zero {
                         timeout-ms = <500>;
                         key-positions = <16 17>;
@@ -134,25 +136,25 @@
                 
        		zero {
 		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
-		&mt TAB A &kp S &kp D &kp F &kp G 			        	        &kp H &to_kp 4 J &kp K &kp L &kp QUOT
-		&mt LGUI Z &mt LALT X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &kp RET
-          				&kp SPC &kp LCTL  				&kp LSHIFT &to 1 
+		&kp Q       &kp W       &kp E &kp R &kp T 			&kp Y &kp U  &kp I    &kp O   &kp P 
+		&mt TAB A   &kp S       &kp D &kp F &kp G         	        &kp H &to_kp 4 J &kp K &kp L &kp QUOT
+		&mt LGUI Z  &mt LALT X  &kp C &kp V &kp B	                &kp N &kp M  &kp CMMA &kp DOT &kp RET
+          				&kp SPC &kp LCTL  			&kp LSHIFT &to 1 
 		>;
 		};
 
        		one {
 		bindings = <
-        &kp ESC &none &kp UP &none &kp HOME                               &kp MINUS &kp N7 &kp N8 &kp N9 &kp BSPC
-        &kp TAB &kp LEFT &kp DOWN &kp RIGHT &kp END                       &kp EQUAL &to_kp 4 N4 &kp N5 &kp N6 &kp LGUI
-        &kp GRAVE &kp SLASH &kp LALT &mt BSLH SEMI &mt RBKT LBKT          &kp N0 &kp N1 &mt COMMA N2 &mt DOT N3 &kp RET
-                &to 0 &kp LCTL                            &kp LSHIFT &to 2
+        &kp ESC   &prev_tab   &kp UP    &next_tab      &kp HOME                   &kp MINUS  &kp N7       &kp N8        &kp N9      &kp BSPC
+        &kp TAB   &kp LEFT    &kp DOWN  &kp RIGHT      &kp END                    &kp EQUAL  &to_kp 4 N4  &kp N5        &kp N6      &kp LGUI
+        &kp GRAVE &kp SLASH   &kp LALT  &mt BSLH SEMI  &mt RBKT LBKT              &kp N0     &kp N1       &mt COMMA N2  &mt DOT N3  &kp RET
+                                        &to 0 &kp LCTL                            &kp LSHIFT &to 2
 		>;
 		};
 		
 		    two {
         bindings = <
-        &kp ESC &kp C_PLAY_PAUSE &kp C_MUTE &none &none            &kp GRAVE &kp LPAR &kp RPAR &none &kp BSPC
+        &kp ESC kp C_PLAY_PAUSE &kp C_MUTE &none &none            &kp GRAVE &kp LPAR &kp RPAR &none &kp BSPC
         &kp TAB &kp C_VOL_DN &kp C_VOL_UP &none &none           &none &to_kp 4 LBKT &kp RBKT &none &to 3
         &kp GRAVE &kp C_PREV &kp C_NEXT &kp COMMA &kp DOT           &none &kp SEMI &kp BSLH &none &kp RET
                 &to 0 &kp LCTL                         &kp LSHIFT &to 1

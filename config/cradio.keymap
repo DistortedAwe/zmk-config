@@ -39,7 +39,7 @@
                 #binding-cells = <2>;
                 flavor = "hold-preferred";
                 tapping_term_ms = <500>;
-                bindings = <&next_tab>, <&prev_tab>;
+                bindings = <&next_tab>, <&close_tab>;
                 };
 
                 clip: behavior_clip {
@@ -49,15 +49,6 @@
                 flavor = "hold-preferred";
                 tapping_term_ms = <500>;
                 bindings = <&cut_clip>, <&copy_clip>;
-                };
-
-                paste: behavior_paste {
-                compatible = "zmk,behavior-hold-tap";
-                label = "paste";
-                #binding-cells = <2>;
-                flavor = "hold-preferred";
-                tapping_term_ms = <500>;
-                bindings = <&paste_clip_format>, <&paste_clip>;
                 };
         };
     
@@ -104,12 +95,12 @@
                 , <&macro_release &kp LCTL>
                 ;
                 )
-                
-                ZMK_MACRO(prev_tab,
+
+                ZMK_MACRO(close_tab,
                 bindings = 
-                <&macro_press &kp LCTL &kp LSHIFT>
-                , <&macro_tap  &kp TAB>
-                , <&macro_release &kp LCTL &kp LSHIFT>
+                <&macro_press &kp LCTL>
+                , <&macro_tap  &kp W>
+                , <&macro_release &kp LCTL>
                 ;
                 )
 
@@ -137,11 +128,19 @@
                 ;
                 )
 
-                ZMK_MACRO(paste_clip_format,
+                ZMK_MACRO(dom_link,
                 bindings = 
-                <&macro_press &kp LCTL &kp LSHIFT>
-                , <&macro_tap  &kp V>
-                , <&macro_release &kp LCTL &kp LSHIFT>
+                <&macro_press &kp LCTL>
+                , <&macro_tap  &kp L>
+                , <&macro_release &kp LCTL>
+                ;
+                )
+
+                ZMK_MACRO(undo,
+                bindings = 
+                <&macro_press &kp LCTL>
+                , <&macro_tap  &kp Z>
+                , <&macro_release &kp LCTL>
                 ;
                 )
         };
@@ -181,13 +180,13 @@
         &none &none &none &none &none                       &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &to 3
         &none &none &none &none &none                       &none       &none         &none         &none         &none
                 &kp SPC  &kp LCTL                                     &kp LSHIFT &to_to 2 1
-		>; 
+		>;
 		};	
                 four{
         bindings = <
-        &none &none &none &none &none                      &kp ESC        &tab      &none     &none  &kp BSPC
-        &none &none &none &none &none                      &copy_capture  &kp LCTL  &kp LALT  &none  &none
-        &none &none &none &none &none                      &none          &clip     &paste    &none  &none
+        &none &none &none &none &none                      &kp ESC        &tab      &dom_link         &none  &kp BSPC
+        &none &none &none &none &none                      &copy_capture  &kp LCTL  &kp LALT      &undo  &none
+        &none &none &none &none &none                      &none          &clip     &paste_clip   &none  &none
                 &kp SPC  &none                                       &kp LSHIFT &to_to 2 1
                 >;
                 };

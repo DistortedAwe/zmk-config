@@ -96,6 +96,14 @@
                 ;
                 )
 
+                ZMK_MACRO(prev_tab,
+                bindings = 
+                <&macro_press &kp LCTL &kp LSHIFT>
+                , <&macro_tap  &kp TAB>
+                , <&macro_release &kp LCTL &kp LSHIFT>
+                ;
+                )
+
                 ZMK_MACRO(close_tab,
                 bindings = 
                 <&macro_press &kp LCTL>
@@ -184,9 +192,9 @@
 		};	
                 four{
         bindings = <
-        &none &none &none &none &none                      &kp ESC        &tab      &dom_link         &none  &kp BSPC
+        &none &none &none &none &none                      &kp ESC        &tab      &none         &none  &kp BSPC
         &none &none &none &none &none                      &copy_capture  &kp LCTL  &kp LALT      &undo  &none
-        &none &none &none &none &none                      &none          &clip     &paste_clip   &none  &none
+        &none &none &none &none &none                      &dom_link          &clip     &paste_clip   &none  &none
                 &kp SPC  &none                                       &kp LSHIFT &to_to 2 1
                 >;
                 };

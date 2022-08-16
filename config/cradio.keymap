@@ -160,7 +160,7 @@
 	bindings = <
 	&kp Q       &kp W       &kp E &kp R &kp T 			&mt MINUS Y &kp U  &kp I     &kp O   &kp P 
 	&kp A       &kp S       &kp D &kp F &kp G         	        &mt EQUAL H &kp J  &kp K     &kp L &kp QUOT
-	&mt LGUI Z  &mt LALT X  &kp C &kp V &kp B	                &mt SEMI N &kp M  &kp CMMA  &kp DOT &kp RET
+	&mt LGUI Z  &mt LALT X  &kp C &kp V &kp B	                &mt SEMI N &mt SLASH M  &kp CMMA  &kp DOT &kp RET
 		&kp SPC  &kp LCTL                            			&kp LSHIFT  &to_to  2 1 
 		>;
 		};
@@ -169,7 +169,7 @@
 		bindings = <
         &none  &prev_tab   &kp UP    &next_tab      &kp HOME                           &kp MINUS  &kp N7  &mt LPAR N8   &mt RPAR N9  &none
         &kp TAB   &kp LEFT    &kp DOWN  &kp RIGHT      &kp END                              &kp EQUAL  &kp N4  &mt LBKT N5   &mt RBKT N6  &mt BSLH QUOT
-        &mt LGUI GRAVE &mt LALT SLASH   &kp LALT  &none  &none           &kp N0     &mt SEMI N1  &mt COMMA N2  &mt DOT N3   &kp RET
+        &mt LGUI GRAVE &mt LALT SLASH   &kp LALT  &none  &none           &mt SEMI N0     &mt SLASH N1  &mt COMMA N2  &mt DOT N3   &kp RET
                 &kp SPC  &kp LCTL                                                                    &kp LSHIFT  &to_to 2 1
 		>;
 		};

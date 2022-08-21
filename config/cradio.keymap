@@ -70,7 +70,7 @@
                         timeout-ms = <100>;
                         key-positions = <6 7>;
                         bindings = <&to 0>;
-                }
+                };
 
                 combo_five {
                         timeout-ms = <100>;
